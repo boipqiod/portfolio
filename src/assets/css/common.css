@@ -77,6 +77,14 @@ body {
     animation-duration: 0.3s;
     opacity: 1;
 }
+@media (max-width: 600px) {
+    .move-button{
+        opacity: 1;
+    }
+    .move-button:hover{
+        animation-name: none;
+    }
+}
 
 .item-container {
     display: flex;
