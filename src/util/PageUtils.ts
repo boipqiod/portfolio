@@ -10,13 +10,12 @@ export default class PageUtils {
         if (duration === 0) {
             window.scrollTo({
                 left: startX,
-                top: startY,
-                behavior: "auto"
+                top: startY
             });
             return Promise.resolve()
         }
         const preventScroll = (event: Event) => {
-            event.preventDefault();
+            // event.preventDefault();
         }
 
         return new Promise((resolve) => {
@@ -29,21 +28,20 @@ export default class PageUtils {
                 const newY = startY + distanceY * timeFraction;
                 window.scrollTo({
                     left: newX,
-                    top: newY,
-                    behavior: "auto"
+                    top: newY
                 });
 
                 if (timeFraction < 1) {
                     requestAnimationFrame(animationFrame);
                 } else {
-                    window.removeEventListener('wheel', preventScroll);
-                    window.removeEventListener('touchstart', preventScroll);
+                    // window.removeEventListener('wheel', preventScroll);
+                    // window.removeEventListener('touchstart', preventScroll);
                     resolve();
                 }
             };
 
-            window.addEventListener('wheel', preventScroll, {passive: false});
-            window.addEventListener('touchstart', preventScroll, {passive: false});
+            // window.addEventListener('wheel', preventScroll, {passive: false});
+            // window.addEventListener('touchstart', preventScroll, {passive: false});
             requestAnimationFrame(animationFrame);
         });
     };
