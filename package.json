@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack --watch"
+    "dev": "webpack --watch",
+    "watch": "nodemon --watch src -e ts,tsx,css,html --exec \"npm run build\""
   },
   "devDependencies": {
     "css-loader": "^6.8.1",
@@ -16,6 +17,8 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "live-server": "^1.2.2",
+    "nodemon": "^3.0.1",
     "webpack": "^5.88.2"
   }
 }

@@ -1,11 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&family=Gamja+Flower&family=Jua&family=Nanum+Gothic:wght@800&family=Roboto:ital,wght@0,400;0,900;1,700&family=Sunflower:wght@300;500&display=swap');
+
+html{
+    font-size: 2vmin;
+}
+
+@media (max-width: 1120px) {
+    html{
+        font-size: 2.5vmin;
+    }
+}
 
 body{
     margin: 0;
     padding: 0;
     scrollbar-width: none;
     background-color: #D9D9D9;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Jua', sans-serif;
 }
 ::-webkit-scrollbar {
     display: none;
