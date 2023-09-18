@@ -4,7 +4,8 @@
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack --watch",
-    "watch": "nodemon --watch src -e ts,tsx,css,html --exec \"npm run build\""
+    "watch": "nodemon --watch src -e ts,tsx,css,html --exec \"npm run build\"",
+    "deploy": "npm run build && && gh-pages -d dist -b gh-pages"
   },
   "devDependencies": {
     "css-loader": "^6.8.1",
