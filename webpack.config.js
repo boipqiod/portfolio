@@ -17,13 +17,24 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.tsx?$/,
+                test: /\.ts$/,
                 use: 'ts-loader',
                 exclude: /node_modules/
             },
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
+            },
+            {
+                test: /\.(png|jpe?g|svg)$/, // 이미지 파일 확장자
+                use: [
+                    {
+                        loader: 'url-loader',
+                        options: {
+                            limit: Infinity, // 파일 크기 제한 없이 모든 파일을 인라인으로 추가
+                        }
+                    }
+                ]
             }
         ]
     },
@@ -41,17 +52,17 @@ module.exports = {
         }),
         new HtmlInlineScriptPlugin()
     ],
-    optimization: {
-        minimize: true,
-        minimizer: [new TerserPlugin({
-            terserOptions: {
-                compress: {
-                    drop_console: true,
-                    drop_debugger: true,
-                },
-                mangle: true,
-            },
-        })],
-    },
+    // optimization: {
+    //     minimize: true,
+    //     minimizer: [new TerserPlugin({
+    //         terserOptions: {
+    //             compress: {
+    //                 // drop_console: true,
+    //                 // drop_debugger: true,
+    //             },
+    //             mangle: true,
+    //         },
+    //     })],
+    // },
 
 };

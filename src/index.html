@@ -1,155 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="프론트엔드 개발자 공상헌의 포트폴리오 #프론트엔드#웹개발#포트폴리오#포폴">
     <meta name="author" content="Kong Sanghun">
     <meta property="og:title" content="프론트엔드 개발자 공상헌의 포트폴리오">
     <meta property="og:description" content="프론트엔드 개발자 공상헌의 포트폴리오 #프론트엔드#웹개발#포트폴리오#포폴">
+    <meta property="og:image"
+          content="https://onedrive.live.com/embed?resid=CDE241B8770FA227%211067775&authkey=%21AGRWA2uZCMtZ778&width=250&height=250">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="https://onedrive.live.com/embed?resid=CDE241B8770FA227%211067766&authkey=%21AGRWA2uZCMtZ778&width=50&height=50">
+
     <meta charset="UTF-8">
     <title>Kong Sanghun</title>
 </head>
 <body>
-<div id="root">
-    <div id="loading" class="loading"></div>
-    <div id="banner-container" class="banner-container">
-        <div id="banner" class="banner">
-            <h1 class="banner-title">Developer of Curiously</h1>
-            <p class="banner-name">kongsanghun</p>
+<div class="container">
+    <div id="main" class="main-container">
+        <div class="main-image-box">
+            <img id="main-image" class="main-image hidden" src="https://onedrive.live.com/embed?resid=CDE241B8770FA227%211067893&authkey=%21AGRWA2uZCMtZ778&height=256" alt="main-image">
         </div>
+
+        <p id="main-title" class="main-title title-underline hidden">
+            Kong Sanghun
+        </p>
+        <p id="main-description-1" class="main-description hidden">
+            대화를 좋아하고 호기심이 많은 개발자 공상헌입니다.
+        </p>
+        <p id="main-description-2" class="main-description hidden">
+            어렸을때부터 이야기하는것을 좋아해, 사람들과 대화하길 즐깁니다.<br/>
+            아이디어 회의와 문제점 해결에서 많은 대화량이 빛을 바랍니다.<br/>
+        </p>
+        <p id="main-description-3" class="main-description hidden">
+            호기심이 많아 새로운 것을 배우는 것을 좋아합니다.<br/>
+            프론트 개발 외에 iOS 개발 경험과 백엔드, 크로스플랫폼 개발 경험이 있습니다.<br/>
+            이러한 경험을 바탕으로 프론트 개발에도 다양한 시각을 가지고 있습니다.<br/>
+        </p>
+
+        <p id="main-hashtag" class="main-hashtag hidden">
+            #프론트엔드#웹개발#소통#팀워크#성장
+        </p>
     </div>
-    <div id="main-container" class="main-container">
-        <div class="main-content">
-            <p id="main-image-container" class="main-image-container">
-                <img id="main-image" class="main-image"
-                     src="https://onedrive.live.com/embed?resid=CDE241B8770FA227%211067745&authkey=%21AGrr5iU1pEhe5Ss&width=951&height=951"
-                     alt="profile"/>
-            </p>
-            <p id="main-title" class="main-title">
-                🙇🏻‍ 안녕하세요!<br/>
-                호기심의 개발자 <span class="red"> 공상헌</span>입니다.
-            </p>
-            <p id="main-description" class="main-description">
-                이야기하는걸 좋아해 커뮤니케이션과 아이디어 회의를 좋아합니다.<br/>
-                호기심이 많아 새로운 발견과 도전을 좋아합니다.
-            </p>
-            <p id="main-hashtag" class="main-description gray">
-                #프론트엔드#웹개발#소통
-            </p>
-            <p id="main-more" class="main-more">
-                <span>자기소개 및 이력소개</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                    <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
-                </svg>
-            </p>
-            <p id="main-next" class="main-next">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-                    <path d="m480-360 160-160H320l160 160Zm0 280q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"
-                          fill="#2B6BCB"/>
-                </svg>
-            </p>
-            <p></p>
-        </div>
-        <div class="main-content">
-            <h1 class="main-introduce-title">
-                인사말
-            </h1>
-            <p id="main-introduce-description-1" class="main-introduce-description">
-                안녕하세요! 공상헌입니다.<br/>
-                먼저 이 페이지까지 와서 이 글을 읽어주시는분들에게 감사하다는 말씀을 전하고 싶습니다. 🙇🏻‍ <br/>
-            </p>
+    <div id="project" class="project-container">
+        <p class="title-underline">
+            Projects
+        </p>
 
-            <p id="main-introduce-description-2" class="main-introduce-description">
-                저는 스스로, 상대방을 가리지 않고 질문하기를 좋아합니다.<br/>
-                또, 제가 생각하는 것을 말로 표현하는 것을 좋아합니다.<br/>
-                이런 부분을 그저 “말이 많고 시끄러운 사람”이 아니라, “적극적이고, 목소리를 낼 줄 아는 사람”이라고 표현하고 싶습니다.<br/>
-                그래서 회의를 좋아합니다.<br/>
-                주제에 대해서 각자의 시각과 방향을 모아 하나의 아이디어를 만들어가는 과정이 아이디어 회의의 진정한 묘미라고 생각합니다.
-            </p>
-
-            <div id="main-introduce-description-3" class="main-introduce-description">
-                저는 프론트엔드 개발자입니다.<br/>
-                그러나 단순히 프론트엔드 영역에 국한되지 않고 다양한 기술 스택에 관심이 있습니다.<br/>
-                다양한 관심으로 인해 iOS앱 출시, 서버리스 환경 개발 등 다양한 기회를 얻었습니다.<br/>
-                프론트엔드 업무를 다양한 분야에서의 경험을 바탕으로 더 풍부하고 다양한 시각으로 접목시키고 싶습니다.
-            </div>
-
-            <p id="main-introduce-description-4" class="main-introduce-description">
-                호기심의 개발자, 공상헌입니다.
-            </p>
-
-            <div id="main-introduce-back-navi" class="main-introduce-back-navi">
-                <span
-                        id="main-introduce-back" class="main-introduce-back"
-                >
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path
-                            d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
-                    돌아가기
-                </span>
-                <span
-                        id="main-introduce-next" class="main-introduce-next"
-                >
-                    이력소개
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path
-                            d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg>
-                </span>
-            </div>
-        </div>
-        <div class="main-content">
-            <h1 class="main-history-title">
-                이력소개
-            </h1>
-            <p id="main-history-description-1" class="main-introduce-description">
-                2개의 회사에서 업무를 보았고, 현재는 구직활동 중 입니다.
-            </p>
-
-            <div id="main-history-description-2" class="main-history-description-group">
-                <div>
-
-                    <div class="main-history-description">
-                        <h1>ngle</h1>
-                        근무 기간
-                        <ul>
-                            <li>2020.05 ~ 2021.05 (계약직)</li>
-                            <li>2021.05 ~ 2021.09</li>
-                        </ul>
-                    </div>
-                    <div class="main-history-description">
-                        담당 업무
-                        <ul>
-                            <li>카카오 게임즈 게임 QA</li>
-                            <li>라인 게임즈 게임 QA</li>
-                            <li>외 모바일 어플리케이션 QA</li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <div class="main-history-description">
-                        <h1>Detion</h1>
-                        근무 기간
-                        <ul>
-                            <li>2021.10 ~ 2022.07</li>
-                        </ul>
-                    </div>
-                    <div class="main-history-description">
-                        담당 업무
-                        <ul>
-                            <li>DM Plus iOS/웹 서비스 유지 보수 및 추가 개발</li>
-                            <li>Shoptrip iOS/웹 서비스 유지 보수 및 추가 개발</li>
-                            <li>AIVI 개발 및 유지보수</li>
-                            <li>외 기타 외부 협력 업무</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="main-history-back-navi" class="main-history-back-navi">
-                <span id="main-history-back" class="main-history-back">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path
-                            d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
-                    처음으로
-                </span>
-            </div>
-        </div>
 
     </div>
 </div>

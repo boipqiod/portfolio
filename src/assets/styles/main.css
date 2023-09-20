@@ -1,0 +1,46 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 1rem;
+
+    width: 80%;
+    max-width: 80%;
+}
+
+.main-image-box{
+    width: 12rem;
+    height: 12rem;
+    margin: auto;
+    border-radius: 100%;
+}
+.main-image{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.main-description{
+    font-size: 0.8rem;
+    color: #111111;
+}
+
+.main-hashtag{
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: #848484;
+    text-align: center;
+}
+
+.main-button-box{
+    display: flex;
+    margin: auto;
+}
+
+.main-button{
+    cursor: pointer;
+}
+.main-button:hover{
+    transform: translateY(0.5rem);
+    transition: transform 0.5s ease-in-out;
+}

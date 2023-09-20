@@ -1,6 +1,8 @@
 export default class PageUtils {
     static smoothScrollWindow = (targetX: number, targetY: number, duration: number): Promise<void> => {
 
+        document.body.style.overflow = 'auto';
+
         const startX = window.scrollX;
         const startY = window.scrollY;
         const distanceX = targetX - startX;
@@ -13,9 +15,6 @@ export default class PageUtils {
                 top: startY
             });
             return Promise.resolve()
-        }
-        const preventScroll = (event: Event) => {
-            // event.preventDefault();
         }
 
         return new Promise((resolve) => {
@@ -34,14 +33,15 @@ export default class PageUtils {
                 if (timeFraction < 1) {
                     requestAnimationFrame(animationFrame);
                 } else {
-                    // window.removeEventListener('wheel', preventScroll);
-                    // window.removeEventListener('touchstart', preventScroll);
+                    window.scrollTo({
+                        left: targetX,
+                        top: targetY
+                    });
+                    document.body.style.overflow = 'hidden';
                     resolve();
                 }
             };
 
-            // window.addEventListener('wheel', preventScroll, {passive: false});
-            // window.addEventListener('touchstart', preventScroll, {passive: false});
             requestAnimationFrame(animationFrame);
         });
     };

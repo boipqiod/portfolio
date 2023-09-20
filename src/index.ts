@@ -1,19 +1,8 @@
 import PageController from "./controller/PageController";
-import TimerUtils from "./util/TimerUtils";
 
-import './assets/common.css';
-import './assets/banner.css';
-import './assets/main.css';
-import AnimateController from "./controller/AnimateController";
-import PageUtils from "./util/PageUtils";
+import './assets/styles/common.css';
+import './assets/styles/main.css';
+import './assets/styles/animate.css';
+import './assets/styles/project.css';
 
-const init = async () => {
-    document.getElementById('loading')?.remove()
-    document.getElementById('banner')?.classList.add('show')
-
-    await TimerUtils.sleep(500)
-    document.getElementById('banner')?.classList.add('cursor-pointer')
-    await PageController.instance.init()
-}
-
-addEventListener('load', init)
+addEventListener('load', PageController.instance.init);

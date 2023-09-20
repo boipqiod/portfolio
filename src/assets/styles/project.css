@@ -1,0 +1,9 @@
+.project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 1rem;
+
+    width: 80%;
+    max-width: 80%;
+}

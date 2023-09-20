@@ -1,0 +1,9 @@
+.visible{
+    transform: translateY(0)!important;
+    opacity: 1!important;
+}
+.hidden{
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    transform: translateY(1rem);
+    opacity: 0;
+}

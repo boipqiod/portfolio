@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "scripts": {
+    "start": "npm run dev & npm run serve",
     "build": "webpack --mode production",
     "dev": "webpack --watch",
     "watch": "nodemon --watch src -e ts,tsx,css,html --exec \"npm run build\"",
@@ -10,12 +11,15 @@
   },
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
     "html-inline-script-webpack-plugin": "^3.2.1",
+    "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",
     "terser-webpack-plugin": "^5.3.9",
     "ts-loader": "^9.4.4",
     "typescript": "^5.2.2",
+    "url-loader": "^4.1.1",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
