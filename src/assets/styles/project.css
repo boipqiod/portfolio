@@ -2,8 +2,32 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 1rem;
+    padding: 50px 1rem 0;
 
     width: 80%;
     max-width: 80%;
+    overflow: visible;
+}
+
+.project-list{
+    display: flex;
+    overflow: auto;
+
+    padding: 0 20px;
+}
+
+.project-item{
+    width: 90%;
+    min-width: 90%;
+    max-width: 90%;
+
+    aspect-ratio: auto 1 / 1.5;
+    border-radius: 8px;
+
+    margin: 8px;
+
+    background-color: #ffffff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+    z-index: 1;
 }

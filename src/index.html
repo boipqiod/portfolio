@@ -4,10 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="프론트엔드 개발자 공상헌의 포트폴리오 #프론트엔드#웹개발#포트폴리오#포폴">
     <meta name="author" content="Kong Sanghun">
-    <meta property="og:title" content="프론트엔드 개발자 공상헌의 포트폴리오">
+    <meta property="og:title" content="Kong Sanghun">
     <meta property="og:description" content="프론트엔드 개발자 공상헌의 포트폴리오 #프론트엔드#웹개발#포트폴리오#포폴">
     <meta property="og:image"
-          content="https://onedrive.live.com/embed?resid=CDE241B8770FA227%211067775&authkey=%21AGRWA2uZCMtZ778&width=250&height=250">
+          content="https://onedrive.live.com/embed?resid=CDE241B8770FA227%211067893&authkey=%21AGRWA2uZCMtZ778&height=256">
     <link rel="icon" type="image/png" sizes="32x32"
           href="https://onedrive.live.com/embed?resid=CDE241B8770FA227%211067766&authkey=%21AGRWA2uZCMtZ778&width=50&height=50">
 
@@ -15,38 +15,108 @@
     <title>Kong Sanghun</title>
 </head>
 <body>
+<div id="loading" class="loading">
+    <div class="loading-indicator"></div>
+</div>
 <div class="container">
     <div id="main" class="main-container">
-        <div class="main-image-box">
-            <img id="main-image" class="main-image hidden" src="https://onedrive.live.com/embed?resid=CDE241B8770FA227%211067893&authkey=%21AGRWA2uZCMtZ778&height=256" alt="main-image">
+        <div id="main-info" class="main-information-box hidden">
+            <img class="main-image"
+                 src="https://onedrive.live.com/embed?resid=CDE241B8770FA227%211067893&authkey=%21AGRWA2uZCMtZ778&height=256"
+                 alt="main-image">
+            <div class="main-information">
+                <div>
+                    <p>name </p>
+                    <p>birth </p>
+                    <p>address </p>
+                    <p>email </p>
+                    <p>phone </p>
+                    <p>github </p>
+                </div>
+                <div>
+                    <p> : 공상헌</p>
+                    <p> : 1994.08.10</p>
+                    <p> : 서울시 관악구 봉천동</p>
+                    <p> : boipqiod@naver.com</p>
+                    <p> : 010-7380-1994</p>
+                    <p> : <a href="https://github.com/boipqiod" target="_blank">https://github.com/boipqiod</a></p>
+                </div>
+            </div>
         </div>
 
-        <p id="main-title" class="main-title title-underline hidden">
-            Kong Sanghun
+        <p id="main-title" class="main-title title-underline orange hidden">
+            About
         </p>
         <p id="main-description-1" class="main-description hidden">
-            대화를 좋아하고 호기심이 많은 개발자 공상헌입니다.
+            대화를 좋아하고 호기심이 많은 개발자 <strong>공상헌</strong>입니다.
         </p>
         <p id="main-description-2" class="main-description hidden">
             어렸을때부터 이야기하는것을 좋아해, 사람들과 대화하길 즐깁니다.<br/>
-            아이디어 회의와 문제점 해결에서 많은 대화량이 빛을 바랍니다.<br/>
+            아이디어 회의와 문제점 해결에서 소통을 좋아하는 성격 덕을 많이 보고 있습니다.<br/>
         </p>
         <p id="main-description-3" class="main-description hidden">
             호기심이 많아 새로운 것을 배우는 것을 좋아합니다.<br/>
             프론트 개발 외에 iOS 개발 경험과 백엔드, 크로스플랫폼 개발 경험이 있습니다.<br/>
             이러한 경험을 바탕으로 프론트 개발에도 다양한 시각을 가지고 있습니다.<br/>
         </p>
-
         <p id="main-hashtag" class="main-hashtag hidden">
             #프론트엔드#웹개발#소통#팀워크#성장
         </p>
+
+
+
     </div>
     <div id="project" class="project-container">
-        <p class="title-underline">
+        <p class="title-underline green">
             Projects
         </p>
+        <div id="project-list" class="project-list">
+            <div class="project-item">
+            </div>
+            <div class="project-item">
+            </div>
+            <div class="project-item">
+            </div>
+            <div class="project-item">
+            </div>
+            <div class="project-item">
+            </div>
+        </div>
+    </div>
+    <div class="contact-container">
+        <p class="title-underline">
+            Contact
+        </p>
 
+        <div class="contact-content">
+            <label>
+                이메일
+                <input
+                    class="contact-content-input"
+                    type="text"
+                    placeholder="이메일을 입력해주세요."
+                />
+            </label>
+            <label>
+                title
+                <input
+                    class="contact-content-input"
+                    type="text"
+                    placeholder="제목을 입력해주세요."
+                />
+            </label>
+            <label>
+                description
+                <textarea
+                    class="contact-content-input"
+                    placeholder="내용을 입력해주세요."
+                    rows="10"
+                ></textarea>
 
+            </label>
+
+        </div>
+        <button class="contact-submit">전송</button>
     </div>
 </div>
 </body>

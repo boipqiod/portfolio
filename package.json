@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm run dev & npm run serve",
+    "start": "npm run serve & npm run dev",
     "build": "webpack --mode production",
     "dev": "webpack --watch",
     "watch": "nodemon --watch src -e ts,tsx,css,html --exec \"npm run build\"",
