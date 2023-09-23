@@ -1,7 +1,9 @@
-import TimerUtils from "../util/TimerUtils";
+import {sleep} from "../util/TimerUtils";
+import {addClass, getById, getByQueryAll, setEventById, setEventsByClass} from "../util/DomUtils";
 
 export default class PageController {
     static instance = new PageController();
+
     private constructor() {
     }
 
@@ -11,58 +13,32 @@ export default class PageController {
         await this.initMainPage()
     }
 
-     removeLoading = async () => {
-        document.getElementById('loading')?.classList.add('hidden')
-        await TimerUtils.sleep(1000)
+    removeLoading = async () => {
+        addClass('loading', 'hidden')
         document.getElementById('loading')?.remove()
     }
 
     initProjectPage = () => {
-        document.getElementById('project-list')?.addEventListener('mouseover', (e) => {
-            console.log('mouseover')
-            window.addEventListener('wheel', this.projectMouseEventHandler, { passive: false })
-        })
-        document.getElementById('project-list')?.addEventListener('mouseout', (e) => {
-            console.log('mouseout')
-            window.removeEventListener('wheel', this.projectMouseEventHandler)
+        setEventsByClass('project-list-indicator-item', 'click', (e, index, ele) => {
+            const items = getByQueryAll('.project-item')
+            const indicators = getByQueryAll('.project-list-indicator-item')
+
+            items.forEach((item) => {
+                    item.classList.add('hidden')
+                    item.classList.remove('visible')
+            })
+            indicators.forEach((indicator) => {
+                indicator.classList.remove('active')
+            })
+
+            indicators[index].classList.add('active')
+            items[index].classList.remove('hidden')
+            items[index].classList.add('visible')
+            window.location.href= `#project`
         })
     }
-    projectMouseEventHandler = (e: WheelEvent) => {
-        const projectList = document.getElementById('project-list') as HTMLDivElement
-
-        const delta = e.deltaY
-
-        const currentScroll = projectList?.scrollLeft
-        const scrollWidth = projectList?.scrollWidth
-        const clientWidth = projectList?.clientWidth
-        const maxScroll = scrollWidth - clientWidth
-        const scroll = currentScroll + delta
-        if (scroll < 0) {
-            projectList?.scrollTo(0, 0)
-        }
-        else if (scroll > maxScroll) {
-            projectList?.scrollTo(maxScroll -1, 0)
-            window.removeEventListener('wheel', this.projectMouseEventHandler)
-        }
-        else {
-            projectList?.scrollTo(scroll, 0)
-        }
-        return e.preventDefault()
-    }
-
 
     initMainPage = async () => {
-        document.getElementById('main-info')?.classList.add('visible')
-        await TimerUtils.sleep(500)
-        document.getElementById('main-title')?.classList.add('visible')
-        await TimerUtils.sleep(500)
-        document.getElementById('main-description-1')?.classList.add('visible')
-        await TimerUtils.sleep(500)
-        document.getElementById('main-description-2')?.classList.add('visible')
-        await TimerUtils.sleep(500)
-        document.getElementById('main-description-3')?.classList.add('visible')
-        await TimerUtils.sleep(500)
-        document.getElementById('main-hashtag')?.classList.add('visible')
-        await TimerUtils.sleep(500)
+
     }
 }

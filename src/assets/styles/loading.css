@@ -4,13 +4,13 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color:#fff;
     z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     transition: opacity 2s ease-in-out;
+    background-color: #ffffff;
     opacity: 1;
 }
 

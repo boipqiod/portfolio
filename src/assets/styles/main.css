@@ -19,31 +19,37 @@
     flex-wrap: wrap;
 }
 .main-image{
-    width: 40%;
+    width: auto;
     aspect-ratio: auto 1 / 1;
     border-radius: 16px;
-    margin-bottom: 10px;
 }
 
 .main-information{
     font-size: 0.8rem;
     margin-bottom: 10px;
-    width: 50%;
-    max-width: 50%;
     display: flex;
 }
 .main-information a{
     color: #111111;
 }
-.main-information p{
-    margin: 0;
+.main-information th{
+    text-align: left;
+}
+
+
+@media screen and (max-width: 600px){
+    .main-information-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-information table{
+        margin-top: 10px;
+    }
 }
 
 .main-description{
     font-size: 0.8rem;
 }
-
-
 
 .main-hashtag{
     font-size: 0.6rem;

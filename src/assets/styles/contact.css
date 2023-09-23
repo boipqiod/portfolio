@@ -18,67 +18,28 @@
 .contact-description{
     font-size: 0.8rem;
 }
-.contact-content{
+
+.contact-submit-container{
     display: flex;
     flex-direction: column;
-    font-size: 0.8rem;
-}
-
-.contact-content label{
-    display: flex;
-    flex-direction: column;
-    margin: 10px 20px;
-    color: #232323;
-}
-
-.contact-content-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-
-    gap: 20px;
-
-    width: 20%;
-}
-
-.contact-content-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding: 0 30px;
-
-    gap: 20px;
-
-    width: 80%;
-}
-
-.contact-content-input{
-    padding: 8px 10px;
-    border-radius: 4px;
-    border: 2px solid #bdbdbd;
-    outline: none;
-    font-size: 0.8rem;
-    color: #111111;
-    margin-top: 2px;
-    transition: border 0.5s ease-in-out;
-}
-.contact-content-input:focus{
-    border: 2px solid var(--primary-color);
+    margin: 50px auto;
+    width: 100%;
 }
 
 .contact-submit{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 10px;
-    border-radius: 4px;
+    padding: 18px 10px;
+    border-radius: 8px;
     outline: none;
     font-size: 0.8rem;
     background-color: var(--primary-color);
     color: white;
     cursor: pointer;
-    margin-top: 2px;
+    margin-top: 10px;
 
+    text-decoration: none;
     transition: opacity 0.5s ease-in-out;
 }
 
