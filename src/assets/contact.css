@@ -2,10 +2,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 1rem;
+    padding: 50px 2rem 0;
 
-    width: 80%;
-    max-width: 80%;
+    width: calc(100% - 4rem);
 }
 
 .contact-sub-title{
@@ -34,7 +33,7 @@
     border-radius: 8px;
     outline: none;
     font-size: 0.8rem;
-    background-color: var(--primary-color);
+    background-color: #1a4fbd;
     color: white;
     cursor: pointer;
     margin-top: 10px;
@@ -43,6 +42,6 @@
     transition: opacity 0.5s ease-in-out;
 }
 
-.contact-submit:hover{
-    opacity: 0.8;
-}
+/*.contact-submit:hover{*/
+/*    opacity: 0.8;*/
+/*}*/

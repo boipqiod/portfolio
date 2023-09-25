@@ -2,10 +2,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 1rem 0;
+    padding: 50px 2rem 0;
 
-    width: 80%;
-    max-width: 80%;
+    width: calc(100% - 4rem);
 }
 
 .main-information-box{
@@ -19,9 +18,10 @@
     flex-wrap: wrap;
 }
 .main-image{
-    width: auto;
-    aspect-ratio: auto 1 / 1;
+    width: 50%;
+    aspect-ratio: 1 / 1;
     border-radius: 16px;
+    object-fit: cover;
 }
 
 .main-information{
@@ -44,6 +44,10 @@
     }
     .main-information table{
         margin-top: 10px;
+    }
+
+    .main-image{
+        width: 80%;
     }
 }
 

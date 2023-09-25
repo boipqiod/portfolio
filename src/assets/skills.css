@@ -1,0 +1,18 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 2rem 0;
+
+    width: calc(100% - 4rem);
+}
+
+.skills-content ul{
+    line-height: 3;
+}
+
+.skills-content .label{
+    font-size: .8rem;
+    font-weight: 700;
+    padding: .3rem .5rem;
+}

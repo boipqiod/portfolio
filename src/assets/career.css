@@ -1,0 +1,8 @@
+.career-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 2rem 0;
+
+    width: calc(100% - 4rem);
+}
