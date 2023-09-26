@@ -14,10 +14,6 @@
     margin-bottom: 20px;
 }
 
-.contact-description{
-    font-size: 0.8rem;
-}
-
 .contact-submit-container{
     display: flex;
     flex-direction: column;
