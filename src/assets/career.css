@@ -1,8 +1,9 @@
-.career-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 50px 2rem 0;
+.career-grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
 
-    width: calc(100% - 4rem);
+.career-grid-item{
+    border-bottom: 1px solid #e7e7e7;
+    line-height: 2;
 }

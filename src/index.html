@@ -15,11 +15,11 @@
 </head>
 <body>
 <div class="container">
-    <div id="main" class="main-container">
-        <div id="main-info" class="main-information-box">
+    <div class="content">
+        <div  class="main-information-container">
             <img class="main-image"
                  src="https://kongs-portfolio.s3.ap-northeast-2.amazonaws.com/profile.jpeg"
-                 alt="main-image">
+                 alt="profile">
             <div class="main-information">
                 <table>
                     <tr>
@@ -46,56 +46,114 @@
             </div>
         </div>
 
-        <p id="main-title" class="main-title title-underline">
+        <p class="title-underline">
             About
         </p>
-        <p id="main-description-1" class="main-description">
-            대화를 좋아하고 호기심이 많은 개발자 <strong>공상헌</strong>입니다.
+        <p class="description">
+            대화를 좋아하고 호기심이 많은 2년차 프론트엔드 개발자 <strong>공상헌</strong>입니다.
         </p>
-        <p id="main-description-2" class="main-description">
-            어렸을때부터 이야기하는것을 좋아해, 사람들과 대화하길 즐깁니다.<br/>
-            이야기를 통해 아이디어 회의와 문제점 해결하는 것이 장점입니다.
+        <p class="description">
+            어렸을때부터 이야기하는것을 좋아해, 사람들과 대화하길 좋아합니다.<br/>
+            이야기를 통해 아이디어 회의를 하거나, 문제를 해결합니다.<br/>
         </p>
-        <p id="main-description-3" class="main-description">
+        <p class="description">
             호기심이 많아 새로운 것을 배우는 것을 좋아합니다.<br/>
             프론트 개발 외에도 iOS 개발 경험과 백엔드, 크로스플랫폼 개발 경험이 있습니다.<br/>
         </p>
-        <p id="main-hashtag" class="main-hashtag">
+        <p class="description bold sm gray">
             #프론트엔드#웹개발#소통#팀워크#성장
         </p>
     </div>
-    <div class="career-container">
+    <div class="content">
         <p class="title-underline">
             Career
         </p>
-
+        <div class="grid description">
+            <div class="grid-item">
+                <p class="subtitle">
+                    Detion
+                </p>
+            </div>
+            <div class="grid-item">
+                <ul>
+                    <li>
+                        2021. 10 ~ 2023. 07
+                    </li>
+                    <li>
+                        글로벌 여권 인증 서비스 DM Plus 프론트엔드, iOS 개발
+                    </li>
+                    <li>
+                        오프라인 결제 서비스 EaximPay 개발
+                    </li>
+                    <li>
+                        AI 기반 아바타 생성, 이미지 편집 서비스 AIVI 개발
+                    </li>
+                </ul>
+            </div>
+            <div class="grid-item">
+                <p class="subtitle">
+                    Ngle (QA)
+                </p>
+            </div>
+            <div class="grid-item">
+                <ul>
+                    <li>
+                        2020. 05 ~ 2021. 10
+                    </li>
+                    <li>
+                        KakaoGames 온라인 게임 서비스 QA
+                    </li>
+                    <li>
+                        LineGames 온라인 게임 서비스 QA
+                    </li>
+                    <li>
+                        기타 앱 서비스 QA
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <div class="skills-container">
+    <div class="content">
         <p class="title-underline">
-            Stack
+            Skills
         </p>
-        <div class="skills-content">
-            <ul>
-                <li>
-                    <span class="label orange">JavaScript</span>
-                    <span class="label orange">TypeScript</span>
-                    <span class="label orange">Swift</span>
-                </li>
-                <li>
-                    <span class="label yellow">React</span>
-                    <span class="label yellow">Next</span>
-                    <span class="label yellow">Express</span>
-                    <span class="label yellow">Electron</span>
-                </li>
-                <li>
-                    <span class="label pink">Bootstrap</span>
-                    <span class="label pink">Chackra UI</span>
-                </li>
-                <li>
-                    <span class="label purple">Firebase</span>
-                </li>
-            </ul>
+        <div class="grid">
+            <div class="grid-item subtitle"><p>Language</p></div>
+            <div class="grid-item">
+                <ul>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Swift</li>
+                </ul>
+            </div>
+            <div class="grid-item subtitle"><p>Lirary & Framework </p></div>
+
+            <div class="grid-item">
+                <ul>
+                    <li>React</li>
+                    <li>Next</li>
+                    <li>Express</li>
+                    <li>Electron</li>
+                </ul>
+            </div>
+
+            <div class="grid-item subtitle"><p>UI</p></div>
+            <div class="grid-item">
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>Chackra UI</li>
+                </ul>
+            </div>
+            <div class="grid-item subtitle"><p>Tool</p></div>
+            <div class="grid-item">
+                <ul>
+                    <li>Git</li>
+                    <li>Slack</li>
+                    <li>Notion</li>
+                    <li>Asana</li>
+                </ul>
+            </div>
         </div>
     </div>
     <div id="project" class="project-container">
@@ -109,34 +167,52 @@
                          src="https://kongs-portfolio.s3.ap-northeast-2.amazonaws.com/eximpay/Eaximpay-icon.png"
                          alt="eaximpay">
                     <span class="title">EaximPay</span>
-                    <span class="label blue">FrontEnd</span>
-                    <span class="label green">Detion</span>
+                    <span class="title">(Detion)</span>
                 </div>
                 <div class="project-item-content">
-                    <div class="project-item-description">
-                        <p class="project-item-subtitle">
-                            개요
-                        </p>
-                        <p>
-                            오프라인 결제 단말기 백업용 웹 어플리케이션입니다.<br/>
-                            엑심베이 오프라인 결제 서비스와 연동된 결제 서비스입니다.<br/>
-                            현금, 카드, 간편 결제 및 거래 조회, 취소 등이 가능합니다.<br/>
-                        </p>
-
-                        <p class="project-item-subtitle">
-                            담당 업무
-                        </p>
-                        <p>
-                            프론트엔드 개발
-                        </p>
-                        <p class="project-item-subtitle">
-                            사용 기술
-                        </p>
-                        <p>
-                            <span class="label orange">JS</span>
-                            <span class="label yellow">Thymeleaf</span>
-                        </p>
+                    <div class="grid description">
+                        <div class="grid-item">
+                            <p class="subtitle">
+                                개요
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <ul>
+                                <li>
+                                    오프라인 결제 단말기 백업용 웹뷰 앱
+                                </li>
+                                <li>
+                                    엑심베이 오프라인 결제 서비스와 연동된 결제 서비스
+                                </li>
+                                <li>
+                                    현금, 카드, 간편 결제 및 거래 조회, 취소 등의 기능 제공
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <p class="subtitle">
+                                담당
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <ul>
+                                <li>
+                                    프론트엔드 개발 담당
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <p class="subtitle">
+                                사용 기술
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <ul>
+                                <li>JavaScript, Thyemeleaf</li>
+                            </ul>
+                        </div>
                     </div>
+
                     <div class="project-item-image-container">
                         <div class="project-item-image">
                             <img
@@ -165,19 +241,21 @@
                                     alt="eximapy">
                         </div>
                     </div>
-                    <div class="project-item-description">
-                        <p class="project-item-subtitle">
+                    <div class="description">
+                        <p class="subtitle">
                             회고
                         </p>
                         <p>
-                            유지보수, 추가개발이 아닌 처음으로 만들게된 프로젝트입니다.<br/>
-                            처음으로 혼자 담당하게된 프로젝트라 많은 어려움을 겪었습니다.<br/>
+                            프레임워크의 제한을 두는 프로젝트였기 때문에, 바닐라 자바스크립트로 개발을 진행했습니다.<br/>
                         </p>
                         <p>
-                            프레임워크 사용에 제한을 두는 프로젝트였기 때문에, 바닐라 자바스크립트와 타임리프를 이용해서 개발했습니다.<br/>
                             신입 시절이여서 프로젝트를 설계하고 구조를 잡는 과정이 많이 부족했고, 이 부분에 가장 어려움을 느꼈습니다.<br/>
-                            MVC패턴과 SPA로 프로젝트를 설계하였고, 바닐라 자바스크립트로 이를 구현했습니다.<br/>
-                            프로젝트가 완료된 이후 프로젝트 구조 설계에 대한 이해도가 많이 높아졌습니다.<br/>
+                            기존에는 url을 통해 이동하는 페이지 방식으로 프로젝트를 진행했습니다.<br/>
+                            페이지 이동 시 속도를 개선하고자, SPA 방식으로 방향을 바꿔 프로젝트 리팩토링을 하였고, 페이지 로딩시간을 없앨 수 있었습니다.
+                        </p>
+                        <p>
+                            SPA로 리팩토링 하면서, 다른 SPA 프레임워크는 어떻게 구현되어 있는지 공부하고, 이를 토대로 프로젝트에 적용해보았습니다.<br/>
+                            엉성하지만 프로젝트를 진행하면서, 프레임워크의 동작 원리를 이해하고, 프레임워크를 사용하는 방법을 배울 수 있었습니다.
                         </p>
                     </div>
                 </div>
@@ -188,46 +266,72 @@
                          src="https://kongs-portfolio.s3.ap-northeast-2.amazonaws.com/DM+Plus/dmplus-app-icon.png"
                          alt="dmplus">
                     <span class="title">DM Plus</span>
-                    <span class="label blue">FrontEnd</span>
-                    <span class="label blue">iOS</span>
-                    <span class="label green">Detion</span>
+                    <span class="title">(Detion)</span>
                 </div>
                 <div class="project-item-content">
-                    <div class="project-item-description">
-                        <p class="project-item-subtitle">
-                            개요
-                        </p>
-                        <p>
-                            여권기반 회원 인증 서비스입니다.<br/>
-                            앱에 여권 및 개인정보를 등록 후 사용하는 앱 버전과 일회용 인증을 제공하는 웹버전이 있습니다.<br/>
-                            롯데,신라 면세점 등에서 해외 카드결제 시 사용자 인증 서비스로 사용 중입니다.<br/>
-                            여권 등록, nfc 인증, 얼굴 인증 등의 사용자 인증 서비스를 제공합니다. <br/>
-                        </p>
-                        <p class="project-item-subtitle">
-                            담당
-                        </p>
-                        <p>
-                            iOS 유지보수 및 추가 개발<br/>
-                            웹 버전 개발<br/>
-                            백오피스 유지보수 및 추가 개발<br/>
-                            중계 서버 유지보수 및 추가 개발<br/>
-                        </p>
-                        <p class="project-item-subtitle">
-                            사용 기술
-                        </p>
-
-                        <p><strong>iOS</strong></p>
-                        <p>
-                            <span class="label orange">Swift</span>
-                            <span class="label yellow">UIKit</span>
-                        </p>
-                        <p><strong>Web</strong></p>
-                        <p>
-                            <span class="label orange">JS</span>
-                            <span class="label yellow">Bootstrap</span>
-                            <span class="label yellow">Express</span>
-                            <span class="label yellow">EJS</span>
-                        </p>
+                    <div class="grid description">
+                        <div class="grid-item">
+                            <p class="subtitle">
+                                개요
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <ul>
+                                <li>
+                                    글로벌 여권기반 인증 서비스
+                                </li>
+                                <li>
+                                    앱에 여권 및 개인정보를 등록 후 사용하는 앱 버전과 일회용 인증을 제공하는 웹버전
+                                </li>
+                                <li>
+                                    롯데,신라 면세점 등에서 해외 카드결제 시 사용자 인증 서비스로 사용 중
+                                </li>
+                                <li>
+                                    여권 등록, nfc 인증, 얼굴 인증 등의 사용자 인증 서비스를 제공
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <p class="subtitle">
+                                담당
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <ul>
+                                <li>
+                                    iOS 유지보수 및 추가 개발
+                                </li>
+                                <li>
+                                    웹 버전 개발 및 유지보수
+                                </li>
+                                <li>
+                                    백오피스 유지보수 및 추가 개발
+                                </li>
+                                <li>
+                                    중계 서버 유지보수 및 추가 개발
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <p class="subtitle">
+                                사용 기술
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <ul>
+                                <li>Swift, UIKit</li>
+                                <li>JavaScript, Bootstrap, Express, EJS</li>
+                                <li>
+                                    <strong>iOS</strong><br/>
+                                    Firebase analytics, crashlytics, remote config, firestore<br/>
+                                    Google MLKit Face Detection, Text Recognition, Google Map<br/>
+                                </li>
+                                <li>
+                                    <strong>Web</strong><br/>
+                                    axios, ejs, bootstrap, Firebase analytics, crypto
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="project-item-image-container">
                         <p class="project-item-subtitle">
@@ -304,8 +408,8 @@
                                     alt="dmplus"/>
                         </div>
                     </div>
-                    <div class="project-item-description">
-                        <p class="project-item-subtitle">
+                    <div class="description">
+                        <p class="subtitle">
                             회고
                         </p>
                         <p>
@@ -323,16 +427,10 @@
                             추가로 노션으로 각 이슈, 날짜, 가맹점 별로 분류할 수 있는 모니터링 툴을 만들어 사용했습니다.<br/>
                         </p>
                         <p>
-                            프론트엔드 개발자로 업무 중 iOS 개발자의 이탈로 iOS 개발과 유지보수를 함께 담당하게 되었습니다.<br/>
-                            최소한의 인수인계만 받은 상태로 시작하게 되었는데 처음에는 많은 어려움이 있었습니다.<br/>
-                            열심히 적응해나가다 보니, 결국 기본적인 개발의 원리는 어디서나 비슷하다는 것을 깨달을 수 있었고, 그때부터 빠르게 적응할 수 있었습니다.<br/>
+                            iOS 개발을 진행하며, MLKit을 이용해 여권 MRZ OCR 모듈을 개발했습니다.<br/>
+                            기존에는 외부 모듈을 비용을 지불하고 사용하고 있었는데, 이를 직접 개발하면서 비용을 절감할 수 있었습니다.<br/>
                         </p>
-                        <p>
-                            iOS 개발을 진행하며, MLKit을 이용해 여권 MRZ OCR 모듈을 개발한 것이 가장 기억에 남습니다.<br/>
-<!--                            모듈 완성과 비용 절감-->
-
-                        </p>
-                        <p class="project-item-subtitle">
+                        <p class="subtitle">
                             서비스 주소
                         </p>
                         <p>
@@ -348,45 +446,67 @@
                     <img class="project-item-icon"
                          src="https://kongs-portfolio.s3.ap-northeast-2.amazonaws.com/aivi/aivi-icon.png" alt="aivi">
                     <span class="title">AIVI</span>
-                    <span class="label blue">FrontEnd</span>
-                    <span class="label blue">iOS</span>
-                    <span class="label green">Detion</span>
+                    <span class="title">(Detion)</span>
                 </div>
                 <div class="project-item-content">
-                    <div class="project-item-description">
-                        <p>
-                            AI 기반 아바타 생성, 이미지 편집 서비스<br/>
-                            스테이블 디퓨전을 이용해 사용자의 사진으로 개인화된 아바타를 생성할 수 있고, 이미지 일부 일부분 수정, 컨트롤넷을 이용한 이미지 변경 기능이 있습니다.<br/>
-                        </p>
-                        <p>
-                            앱과 웹 버전이 있습니다.<br/>
-                            앱 버전은 스테이블 디퓨전을 이용해 본인의 아바타를 생성하고, 이미지를 편집하는 기능을 제공합니다.<br/>
-                            웹 버전은 유명인의 이름과 스타일을 선택해, 일회성 아바타를 생성해 볼 수 있습니다.
-                        </p>
-                        <p class="project-item-subtitle">
-                            담당
-                        </p>
-                        <p>
-                            iOS 개발<br/>
-                            웹 버전 개발<br/>
-                            백오피스 유지보수<br/>
-                        </p>
-                        <p class="project-item-subtitle">
-                            사용 기술
-                        </p>
-                        <p><strong>iOS</strong></p>
-                        <p>
-                            <span class="label orange">Swift</span>
-                            <span class="label yellow">UIKit</span>
-                        </p>
-                        <p><strong>Web</strong></p>
-                        <p>
-                            <span class="label orange">JS</span>
-                            <span class="label yellow">Bootstrap</span>
-                            <span class="label yellow">Express</span>
-                            <span class="label yellow">EJS</span>
-                        </p>
+                    <div class="grid description">
+                        <div class="grid-item">
+                            <p class="subtitle">
+                                개요
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <ul>
+                                <li>
+                                    AI 기반 아바타 생성, 이미지 편집 서비스
+                                </li>
+                                <li>
+                                    AI 이용해 사용자의 사진으로 개인화된 아바타를 생성 및 이미지 변환을 제공하는 앱버전
+                                </li>
+                                <li>
+                                    유명인의 이름과 스타일을 선택해 일회성 아바타를 생성해 볼 수 있는 웹버전
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <p class="subtitle">
+                                담당
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <ul>
+                                <li>
+                                    iOS 개발
+                                </li>
+                                <li>
+                                    웹버전 개발
+                                </li>
+                                <li>
+                                    백오피스 유지보수
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <p class="subtitle">
+                                사용 기술
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <ul>
+                                <li>Swift, UIKit</li>
+                                <li>JavaScript, Bootstrap, Express, EJS</li>
+                                <li>
+                                    <strong>iOS</strong><br/>
+                                    Firebase analytics, crashlytics,Google MLKit Face Detection, AD Mob
+                                </li>
+                                <li>
+                                    <strong>Web</strong><br/>
+                                    axios, ejs, bootstrap, Firebase analytics, Google captcha
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+
                     <div class="project-item-image-container">
                         <p class="project-item-subtitle"> iOS </p>
                         <div class="project-item-image">
@@ -460,8 +580,8 @@
                                     alt="aivi"/>
                         </div>
                     </div>
-                    <div class="project-item-description">
-                        <p class="project-item-subtitle">
+                    <div class="description">
+                        <p class="subtitle">
                             회고
                         </p>
                         <p>
@@ -475,41 +595,55 @@
                             성급하지 않고 천천히 해결해나가는 것이 더 빠른 결과를 가져올 수 있다는 것을 배울 수 있었습니다.
                         </p>
                         <p>
-                            특히 iOS의 엄격한 규약에 따라 개발을 진행하다 보니, 코드 안정성 대해 많은 고민을 하게 되었습니다.<br/>
-                            이를 토대로 이후로 프론트엔드 개발을 진행할 때, 항상 TypeScript를 사용하여 안정성을 높혀 개발하고 있습니다.<br/>
+                            메인 페이지 그리드 뷰에서 너무 많은 메모리를 사용해 스크롤 시 버벅이는 이슈가 있었습니다.<br/>
+                            이를 해결하기 위해 이미지를 다운 샘플링하여 메모리에 올리는 방식으로 개선하였습니다.<br/>
+                            기존에 약 100여개가 넘어가면 버벅이던 것이 수백여개까지도 버벅임 없이 스크롤이 가능하도록 개선할 수 있었습니다.
                         </p>
                     </div>
                 </div>
+
             </div>
             <div id="EasyBid" class="project-item">
                 <div class="project-item-title">
                     <img class="project-item-icon"
                          src="https://kongs-portfolio.s3.ap-northeast-2.amazonaws.com/easybid/easybid-icon.png" alt="easybid">
                     <span class="title">EasyBid</span>
-                    <span class="label blue">FrontEnd</span>
-                    <span class="label blue">Electron</span>
-                    <span class="label green">개인</span>
+                    <span class="title">(개인)</span>
                 </div>
                 <div class="project-item-content">
-                    <div class="project-item-description">
-                        <p>
-                            유튜브 상품 판매 및 경매 서비스<br/>
-
-                        </p>
-                        <p>
-                            친형이 하고있는 유튜브 판매 및 경매 서비스를 위해 개발한 프로그램입니다.<br/>
-                            유튜브 라이브 방송을 통해 상품을 판매하고, 경매를 진행할 때 유튜브에 채팅 전송, 채팅 읽기 등의 기능으로 상품 판매를 서포트합니다.<br/>
-                            Firestore를 통해 데이터를 관리합니다.<br/>
-                            현재 재고 관리 및 회원 관리 기능까지 추가 개발 중입니다.<br/>
-                        </p>
-                        <p class="project-item-subtitle">
-                            사용 기술
-                        </p>
-                        <p>
-                            <span class="label orange">TS</span>
-                            <span class="label yellow">React</span>
-                            <span class="label yellow">Electron</span>
-                        </p>
+                    <div class="grid description">
+                        <div class="grid-item">
+                            <p class="subtitle">
+                                개요
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <ul>
+                                <li>
+                                    유튜브 상품 판매 및 경매 서비스
+                                </li>
+                                <li>
+                                    재고관리 및 회원 관리(개발 중) 시스템
+                                </li>
+                                <li>
+                                    유튜브에 채팅 자동 전송, 채팅 읽기 등의 기능으로 상품 판매를 지원
+                                </li>
+                                <li>
+                                    버전 별 자동 업데이트 기능
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-item">
+                            <p class="subtitle">
+                                사용 기술
+                            </p>
+                        </div>
+                        <div class="grid-item">
+                            <ul>
+                                <li>TypeScript, React, Bootstrap, Electron</li>
+                                <li>Webpack, electron-updater</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="project-item-image-container">
                         <div class="project-item-image">
@@ -536,108 +670,19 @@
                                     alt="easybid"/>
                         </div>
                     </div>
-                    <div class="project-item-description">
-                        <p class="project-item-subtitle">
+                    <div class="description">
+                        <p class="subtitle">
                             회고
                         </p>
                         <p>
-                            기존에는 SaaS으로 개발하기 위해 React와 Express를 사용해 개발했습니다.<br/>
-                            먼저 프론트엔드는
-                        </p>
-                        <p>
+                            기존에는 SaaS으로 개발하기 위해 Express를 사용해 개발했습니다.<br/>
                             Express를 이용해 서버에서 Youtube API를 이용한 채팅 읽기, 채팅 전송 기능을 구현했습니다.<br/>
                             하지만, Youtube API는 각 사용자 마다 API Key를 받아야되고, 수량도 한정적이라는 점 등 한계로 인해 Electron으로 리팩토링을 진행했습니다.<br/>
+                            이를 통해 Youtube API를 사용하지 않고, Electron 창의 DOM 조작을 통해 채팅 읽기, 채팅 전송 기능을 구현할 수 있었습니다.<br/>
                         </p>
                         <p>
-                            저는 코드를 모듈화하고 재사용성을 높이는 것을 좋아합니다.<br/>
-                            이 프로젝트에서 React를 보다 깊게 사용해보며 코드를 모듈화하고 재사용성을 높이는 것에 대해 더 많은 고민을 할 수 있었습니다.<br/>
-                            이런 경험으로 자신만의 코드 스타일이 만들어 지는 것을 느꼈습니다.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div id="kutil" class="project-item">
-                <div class="project-item-title">
-                    <img class="project-item-icon"
-                         src="https://kongs-portfolio.s3.ap-northeast-2.amazonaws.com/kutil/icon.png" alt="easybid">
-                    <span class="title">kutil</span>
-                    <span class="label blue">FrontEnd</span>
-                    <span class="label green">개인</span>
-                </div>
-                <div class="project-item-content">
-                    <div class="project-item-description">
-                        <p>
-                            공상헌의 이모저모 사이트<br/>
-                        </p>
-                        <p>
-                            Kong's Utility의 약자로, 제가 만든 유틸리티 사이트입니다.<br/>
-                            제가 당장 필요한 기능부터, 주변에서 이런게 있으면 좋겠다라고 추천해주는 기능을 위주로 만들고 있습니다.<br/>
-                            현재 기능은 아래와 같습니다.<br/>
-                        </p>
-                        <ul>
-                            <li>
-                                <a href="https://boipqiod.github.io/kutil/util/string-to-base64" target="_blank">String to Base64</a>,
-                                <a href="https://boipqiod.github.io/kutil/util/file-to-base64" target="_blank">File to Base64</a>,
-                                <a href="https://boipqiod.github.io/kutil/util/png-to-jpg" target="_blank">PNG to JPG</a>,
-                            </li>
-                            <li>
-                                <a href="https://boipqiod.github.io/kutil/tool/focus-manager">FocusManager</a>
-                            </li>
-                        </ul>
-
-                        <p class="project-item-subtitle">
-                            사용 기술
-                        </p>
-                        <p>
-                            <span class="label orange">TS</span>
-                            <span class="label yellow">Next.js</span>
-                            <span class="label yellow">Chakra UI</span>
-                        </p>
-                    </div>
-                    <div class="project-item-image-container">
-                        <div class="project-item-image">
-                            <img
-                                    class="lg"
-                                    loading="lazy"
-                                    src="https://kongs-portfolio.s3.ap-northeast-2.amazonaws.com/kutil/1.jpg"
-                                    alt="kutil"/>
-                            <img
-                                    class="lg"
-                                    loading="lazy"
-                                    src="https://kongs-portfolio.s3.ap-northeast-2.amazonaws.com/kutil/3.jpg"
-                                    alt="kutil"/>
-                            <img
-                                    class="lg"
-                                    loading="lazy"
-                                    src="https://kongs-portfolio.s3.ap-northeast-2.amazonaws.com/kutil/2.jpg"
-                                    alt="kutil"/>
-                            <img
-                                    class="lg"
-                                    loading="lazy"
-                                    src="https://kongs-portfolio.s3.ap-northeast-2.amazonaws.com/kutil/4.jpg"
-                                    alt="kutil"/>
-                            <img
-                                    class="lg"
-                                    loading="lazy"
-                                    src="https://kongs-portfolio.s3.ap-northeast-2.amazonaws.com/kutil/5.jpg"
-                                    alt="kutil"/>
-                        </div>
-                    </div>
-                    <div class="project-item-description">
-                        <p class="project-item-subtitle">
-                            회고
-                        </p>
-                        <p>
-                            언젠가 base64 컨버팅을 위해 온라인 사이트를 찾던 중 내가 필요한 기능을 만들어보자라는 생각에서 시작한 사이트입니다.<br/>
-                            현재는 간단하게 필요한 기능과 간단한 툴이 있지만, 나중에는 공부한 내용을 정리하는 블로그, 간단한 게임 등 다양한 기능을 추가할 예정입니다.<br/>
-                            궁극적으로 제가 필요한 기능을 모두 만들어서 모두가 사용하는 사이트가 되었으면 좋겠습니다.<br/>
-                        </p>
-
-                        <p class="project-item-subtitle">
-                            서비스 주소
-                        </p>
-                        <p>
-                            <a href="https://boipqiod.github.io/kutil/" target="_blank">kutil</a>
+                            프론트엔드는 기존에 ejs와 JavaScript로 개발을 진행했으며, 빠른 개발속도와 유지보수 용이성을 위해 React를 사용했습니다.<br/>
+                            또한, Electron의 화면은 정적 파일로 불러오기 때문에, React를 이용해 동적인 화면을 구성하기도 용이하여 기술을 선택했습니다.
                         </p>
                     </div>
                 </div>

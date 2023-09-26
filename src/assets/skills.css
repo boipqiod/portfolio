@@ -1,18 +1,30 @@
-.skills-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 50px 2rem 0;
-
-    width: calc(100% - 4rem);
+.skills-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.skills-content ul{
-    line-height: 3;
+.skills-table{
+    width: 100%;
+    max-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.skills-table td,
+.skills-table th{
+    border-right: 1px solid #e7e7e7;
+    padding: 0.5rem;
 }
 
-.skills-content .label{
-    font-size: .8rem;
-    font-weight: 700;
-    padding: .3rem .5rem;
+.skills-table th{
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.skills-table td{
+    vertical-align: baseline;
+    line-height: 2;
+}
+
+.skills-table tr th:last-child,
+.skills-table tr td:last-child {
+    border-right: none;
 }

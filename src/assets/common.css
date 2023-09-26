@@ -12,7 +12,6 @@
     scrollbar-width: none;
     font-family: 'Roboto', sans-serif;
     color : #111111;
-    font-size: 18px;
 }
 
 body{
@@ -50,11 +49,9 @@ a{
 
     overflow: visible;
 }
-.container.left{
-    left: -100vw;
-}
-.container.right{
-    left: 100vw;
+.content{
+    padding: 50px 2rem 0;
+    width: calc(100% - 4rem);
 }
 
 .z-index-1{
@@ -65,7 +62,7 @@ a{
 }
 
 .title-underline{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     width: 100%;
     color: var(--primary-color);
@@ -94,9 +91,49 @@ a{
 .label.purple{
     color: #451088;
 }
+.label.red{
+    color: #ff0b0b;
+}
 .label.green{
     color: #108d1f;
 }
 .label.blue{
     color: #0054ff;
+}
+
+.description{
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.title{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.subtitle{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.description.gray{
+    color: #707070;
+}
+
+.description.sm{
+    font-size: 0.8rem;
+}
+
+.description.bold{
+    font-weight: 700;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-bottom: 1rem;
+}
+.grid-item{
+    border-bottom: 1px solid #e7e7e7;
+    line-height: 2;
 }

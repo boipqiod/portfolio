@@ -1,7 +1,7 @@
-import './assets/styles/common.css';
-import './assets/styles/loading.css';
-import './assets/styles/main.css';
-import './assets/styles/skills.css';
-import './assets/styles/career.css';
-import './assets/styles/project.css';
-import './assets/styles/contact.css';
+import './assets/common.css';
+import './assets/loading.css';
+import './assets/main.css';
+import './assets/skills.css';
+import './assets/career.css';
+import './assets/project.css';
+import './assets/contact.css';

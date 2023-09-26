@@ -1,31 +1,22 @@
-.main-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 50px 2rem 0;
-
-    width: calc(100% - 4rem);
-}
-
-.main-information-box{
+.main-information-container{
     width: 100%;
     margin: auto;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-end;
 
     flex-wrap: wrap;
 }
 .main-image{
-    width: 50%;
+    width: 40%;
     aspect-ratio: 1 / 1;
     border-radius: 16px;
     object-fit: cover;
 }
 
 .main-information{
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 10px;
     display: flex;
 }
@@ -35,7 +26,6 @@
 .main-information th{
     text-align: left;
 }
-
 
 @media screen and (max-width: 600px){
     .main-information-box{
@@ -49,27 +39,4 @@
     .main-image{
         width: 80%;
     }
-}
-
-.main-description{
-    font-size: 0.8rem;
-}
-
-.main-hashtag{
-    font-size: 0.6rem;
-    font-weight: 600;
-    color: #6c6c6c;
-}
-
-.main-button-box{
-    display: flex;
-    margin: auto;
-}
-
-.main-button{
-    cursor: pointer;
-}
-.main-button:hover{
-    transform: translateY(0.5rem);
-    transition: transform 0.5s ease-in-out;
 }
