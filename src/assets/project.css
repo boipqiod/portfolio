@@ -68,13 +68,12 @@
     width: 100%;
     height: auto;
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    flex-wrap: wrap;
+    /*overflow-x: scroll;*/
+    /*overflow-y: hidden;*/
 }
-.project-item-image img,
-.project-item-image video{
-    max-width: 30%;
+.project-item-image img{
+    max-width: calc(100%/3 - 2% - 2px);
     min-height: 200px;
     border-radius: 16px;
     margin: 1% 1%;
@@ -84,7 +83,7 @@
 }
 
 .project-item-image img.lg{
-    max-width: 80%
+    max-width: calc(50% - 2% - 2px);
 }
 
 .project-item-description {
