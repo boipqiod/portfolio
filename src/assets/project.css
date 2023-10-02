@@ -17,7 +17,6 @@
 }
 
 .project-item {
-    border-bottom: #d5d5d5 1px solid;
     padding: 2rem 0;
 }
 
@@ -65,26 +64,23 @@
 }
 
 .project-item-image {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
+
 .project-item-image img,
 .project-item-image video{
-    max-width: 30%;
+    width: 95%;
     min-height: 200px;
     border-radius: 16px;
-    margin: 1% 1%;
+    margin: 2.5% auto;
     border: 1px solid #d9d9d9;
     background-color: #d9d9d9;
     object-fit: cover;
 }
 
 .project-item-image img.lg{
-    max-width: 80%
+    grid-column: auto / span 2;
 }
 
 .project-item-description {
@@ -138,7 +134,7 @@
 
     .project-item-image img,
     .project-item-image video{
-        /*max-width: 30%;*/
+
     }
 
 }
